@@ -16,10 +16,10 @@ This project intends to use big data technologies to perform a thorough investig
 ## Project Description
 By leveraging big data technologies, this project provides valuable insights into the online behavior of consumers and the role of digital platforms in the pre-owned vehicle market. Two datasets are used for the analysis, where the data is cleaned and joined together. Once joined the dataset is split into 5 tables (1 fact and 4 dimension table) using Airflow and accessed from BigQuery. GigQuery is connected to Tableau to provide insightful visualizations. An interactive dashboard is created and is shown in a web interface.
 
-* Dataset source is Kaggle
+* The dataset source is Kaggle
 * DataSet 1: https://www.kaggle.com/datasets/ananaymital/us-used-cars-dataset
 * Dataset 2: https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
 
 ### Files 
-The files shared are codes to the data cleanning and Airflow DAG flies. 
+The files shared are codes for the data cleaning (python file) and Airflow DAG flies (1 dag file and 5 SQL files). 
 
