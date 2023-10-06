@@ -45,8 +45,8 @@ with DAG('DataWarehouse', schedule_interval=timedelta(days=15), default_args=def
     load_dataset_used_car = GCSToBigQueryOperator(
         task_id = 'load_dataset_used_car_dataset',
         bucket = BUCKET_NAME,
-        source_objects = ['data/used_cars_data.csv'],
-        destination_project_dataset_table = f'{PROJECT_ID}:{STAGING_DATASET}.used_cars_data',
+        source_objects = ['data/used_car_dataset.csv'],
+        destination_project_dataset_table = f'{PROJECT_ID}:{STAGING_DATASET}.used_car_dataset',
         write_disposition='WRITE_TRUNCATE',
         source_format = 'csv',
         allow_quoted_newlines = 'true',
@@ -113,7 +113,7 @@ with DAG('DataWarehouse', schedule_interval=timedelta(days=15), default_args=def
         task_id = 'check_used_cars_dataset',
         use_legacy_sql=False,
         location = LOCATION,
-        sql = f'SELECT count(*) FROM `{PROJECT_ID}.{STAGING_DATASET}.used_cars_data`'
+        sql = f'SELECT count(*) FROM `{PROJECT_ID}.{STAGING_DATASET}.used_car_dataset`'
         )
  
 
