@@ -21,5 +21,5 @@ By leveraging big data technologies, this project provides valuable insights int
 * Dataset 2: https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
 
 ### Files 
-The files shared are codes for the data cleaning (Jupiter notebook file data_transformation), Airflow file (DAG file and 5 SQL files), and System design and Tableau Dashboard. 
+The files shared are codes for the data cleaning (Jupyter notebook file data_transformation), Airflow file (DAG file and 5 SQL files), and System design and Tableau Dashboard. 
 
